@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --font : 'Ubuntu', sans-serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/clg1.jpg');
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/clg2.png'); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/clg3.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* opacity: 0.5; */
+}
+.main{
+    margin: auto;
+}
+.main ul {
+    float: right;
+    list-style: none;    
+    margin-top: 12px;
+
+}
+.main ul li{
+    display: inline-block; 
+}
+.main ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: -3px 6px 2px #393131;
+    /* text-shadow: -3px -2px 2px #ffffff; */
+    font-family: var(--font) ;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 2px 2px;
+    margin: 2px 52px;
+}
+.main ul li a:hover{
+    text-decoration: underline;
+    /* color: rgb(147, 70, 70); */
+    /* color: rgb(24, 24, 194); */
+    color: rgb(26, 159, 231);
+    transition: 0.4s ease;
+} 
+.para h1{
+    text-align: center;
+    margin: 18px 0px 38px 0px;
+}
+.para{
+    font-family: var(--font);
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 47vh;
+    width: 86vw;
+    /* border: 2px solid red; */
+    color: #fffdee;
+}
+.button{
+    font: var(--font);
+    position: absolute;
+    top: 59%;
+    left: 23%;
+}
+.btn{
+    text-decoration: none;
+    padding: 0px 63px;
+    margin: 2px 97px;
+    color: #ffffff;
+    border: 2px solid white;
+    /* text-shadow: -3px 6px 2px #393131; */
+    box-shadow: 3px 3px 0px #ffffff;
+    font-size: 29px;
+    border-radius: 12px;
+}
+.button a:hover{
+    background-color: #fffdee;
+    color: black;
+    border: 2px solid black;
+    text-shadow: 1px 1px 0px #393131;
+    /* box-shadow: 3px 3px 0px #090909; */
+    transition: 0.6s ease;
+}
+/*x-------------------------------------- control panel -----------------------------------------------x*/
+/* 
+.cpanel{ 
+    font: var(--font);
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+}
+.box{
+    font: var(--font);
+    width: 39vw;
+    height: 21vh;
+    color: white;
+}
+.box a{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 24px;
+    border: 1px solid black;
+    background: white;
+    box-shadow: 3px 4px 0px black;
+}
+.box a:hover{
+    text-decoration: underline;
+    text-shadow: -3px 6px 2px #393131;
+    color: rgb(71, 65, 65);
+    text-shadow: none;
+    transition: 0.4s ease;
+}
+.box p{
+    margin: 15px 16px;
+}
+#box-1{
+    position: absolute;
+    top: 15%;
+    left: 14%
+}
+#box-2{
+    position: absolute;
+    top: 30%;
+    left: 52%
+}
+#box-3{
+    position: absolute;
+    top: 45%;
+    left: 14%
+}
+#box-4{
+    position: absolute;
+    top: 60%;
+    left: 52%
+}
+#box-5{
+    position: absolute;
+    top: 75%;
+    left: 14%
+} */
+/*x-------------------------------------- control panel 2 -----------------------------------------------x*/
+
+
+
+.cpanel{
+    position: absolute;
+    top: 2%;
+    margin-top: 10%;
+    width: 18vw;
+    height: 90vh;
+    background-color: black;
+}
+.panels{
+    background-color: red;
+    border: 2px solid yellow;
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+}
+.panels a{
+    color: #fffdee;
+}
