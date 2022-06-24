@@ -5,6 +5,22 @@
 :root{
     --font : 'Ubuntu', sans-serif;
 }
+.main h1{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 4%;
+    margin: 17px 6px;
+    color: #ffffff;
+    font-family: var(--font);
+    font-size: 30px;
+    text-shadow: -3px 6px 2px #393131;
+}
+.logo img{
+    margin: 18px 0px 0px 22px;
+    width: 50px;
+}
+/*-------------------------------- Css for backgroung image -----------------*/
 header{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/clg1.jpg');
     /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/clg2.png'); */
@@ -15,19 +31,20 @@ header{
     height: 100vh;
     /* opacity: 0.5; */
 }
-.main{
+/*------------------------------- Css for navigation bar------------------------------------- */
+.nav{
     margin: auto;
 }
-.main ul {
+.nav ul {
     float: right;
     list-style: none;    
     margin-top: 12px;
 
 }
-.main ul li{
+.nav ul li{
     display: inline-block; 
 }
-.main ul li a{
+.nav ul li a{
     text-decoration: none;
     color: #ffffff;
     text-shadow: -3px 6px 2px #393131;
@@ -38,13 +55,13 @@ header{
     padding: 2px 2px;
     margin: 2px 52px;
 }
-.main ul li a:hover{
+.nav ul li a:hover{
     text-decoration: underline;
-    /* color: rgb(147, 70, 70); */
-    /* color: rgb(24, 24, 194); */
     color: rgb(26, 159, 231);
     transition: 0.4s ease;
 } 
+/* ------------------------------------center------------------------------------------------ */
+
 .para h1{
     text-align: center;
     margin: 18px 0px 38px 0px;
@@ -56,11 +73,10 @@ header{
     left: 5%;
     height: 47vh;
     width: 86vw;
-    /* border: 2px solid red; */
     color: #fffdee;
 }
 .button{
-    font: var(--font);
+    font-family: var(--font);
     position: absolute;
     top: 59%;
     left: 23%;
@@ -69,98 +85,85 @@ header{
     text-decoration: none;
     padding: 0px 63px;
     margin: 2px 97px;
-    color: #ffffff;
-    border: 2px solid white;
+    background-color: white;
+    color: rgb(6, 6, 6);
+    border: 2px solid rgb(0, 0, 0);
     /* text-shadow: -3px 6px 2px #393131; */
     box-shadow: 3px 3px 0px #ffffff;
     font-size: 29px;
     border-radius: 12px;
+    font-weight: bolder;
 }
 .button a:hover{
-    background-color: #fffdee;
-    color: black;
-    border: 2px solid black;
-    text-shadow: 1px 1px 0px #393131;
-    /* box-shadow: 3px 3px 0px #090909; */
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: 2px solid hwb(0 94% 4%);
+    text-shadow: 1px 2px 0px #393131;
     transition: 0.6s ease;
 }
-/*x-------------------------------------- control panel -----------------------------------------------x*/
+/* ----------------------------------Control panel-------------------------------------------------- */
 /* 
-.cpanel{ 
-    font: var(--font);
-    margin: auto;
-    display: flex;
-    width: 100vw;
-    height: 85vh;
-}
-.box{
-    font: var(--font);
-    width: 39vw;
-    height: 21vh;
-    color: white;
-}
-.box a{
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    text-decoration: none;
-    font-size: 24px;
-    border: 1px solid black;
-    background: white;
-    box-shadow: 3px 4px 0px black;
-}
-.box a:hover{
-    text-decoration: underline;
-    text-shadow: -3px 6px 2px #393131;
-    color: rgb(71, 65, 65);
-    text-shadow: none;
-    transition: 0.4s ease;
-}
-.box p{
-    margin: 15px 16px;
-}
-#box-1{
-    position: absolute;
-    top: 15%;
-    left: 14%
-}
-#box-2{
-    position: absolute;
-    top: 30%;
-    left: 52%
-}
-#box-3{
-    position: absolute;
-    top: 45%;
-    left: 14%
-}
-#box-4{
-    position: absolute;
-    top: 60%;
-    left: 52%
-}
-#box-5{
-    position: absolute;
-    top: 75%;
-    left: 14%
-} */
-/*x-------------------------------------- control panel 2 -----------------------------------------------x*/
-
-
 
 .cpanel{
     position: absolute;
-    top: 2%;
-    margin-top: 10%;
-    width: 18vw;
-    height: 90vh;
-    background-color: black;
+    width: 22vw;
+    height: 93vh;
+    background-color: #1e1818;
+    margin-top: 11px;
 }
 .panels{
-    background-color: red;
-    border: 2px solid yellow;
-    margin: 2px 2px 2px 2px;
-    padding: 2px 2px 2px 2px;
+
+    background-color: #1e1818;
+    height: 9vh;
+    text-align: center;
 }
 .panels a{
-    color: #fffdee;
+    display: block;
+    padding: 28px 0px;
+    color: #707070;
+    font-family: var(--font);
+    text-decoration: none;
+    font-size: 20px;
 }
+.panels a:hover{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-decoration: underline;
+} */
+
+/* -------------------------------Control panel 2(Anurag) -------------------------------------------------- */
+/* #slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 12s slider infinite;
+    
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    padding: 2px 2px;
+    margin: 10px 10px;
+    margin: -182px -11px;
+}
+@keyframes slider {
+    0%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+} */
